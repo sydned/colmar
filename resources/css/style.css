@@ -1,0 +1,625 @@
+/**font-family: 'Josefin Sans', sans-serif;
+font-family: 'Arima Madurai', cursive;
+font-family: 'Cormorant Garamond', serif;**/
+
+
+/**general styling section**/
+
+html {
+  font-size: 16px
+}
+
+body {
+  color:#f4e8c1; /**light script**/
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: 'Josefin Sans', sans-serif;  /**clearer font for smaller text**/
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/**header section with logo and nav links**/
+
+header {
+  display: flex;
+  height: 4rem;
+  width:100%;
+  padding-left:1.5rem;
+  margin-right:1.5rem;
+  margin-top:0;
+  align-items: center;
+  background-color:#A0c1b8; /**green**/
+  z-index: 5;
+  position:fixed;
+}
+
+header .mobileonly {
+  display: none;
+}
+
+header p {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 0.5rem;
+  padding:bottom: 1.25rem;
+}
+
+header span {
+  font-size: 2rem;
+}
+
+nav {
+  display:flex;
+  width: 75%;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+nav li {
+  display:inline-block;
+  font-family:  'Cormorant Garamond', serif;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+nav li a {
+  text-decoration:none;
+  color:#351f39;   /**dark purple**/
+}
+
+nav a:hover {
+  transition: color 200ms linear 200ms;
+  color: orange;
+}
+
+nav a:visited {
+  transition: color 200ms linear 0;
+  color:#256ebf;
+}
+
+/**Header Mobile Rules**/
+
+
+@media only screen and (max-width: 500px) {
+  header nav  {
+    display: none;
+  }
+
+  header p  {
+    display: none;
+  }
+
+  header .mobileonly {
+    display:inline;
+    padding-left: 6rem;
+  }
+
+  header {
+  padding-right: 1.5rem;
+}
+}
+
+
+/**First interest section with large photo and info**/
+
+.interest {
+  background-color: #709fb0; /**blue**/
+  display:flex;
+  font-family: 'Cormorant Garamond', serif;
+  width:100%;
+  height:auto;
+  padding-top: 4rem;
+}
+
+.extralargeimagecontainer {
+  width:60%;
+  display: block;
+  height:auto;
+  padding:2rem 4rem 2rem 1.5rem;
+  float: right;
+}
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+}
+
+.interesttext {
+  width:40%;
+  display: block;
+  text-align: left;
+  align-content: center;
+  margin:auto;
+}
+
+.interesttext h3 {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+/**Splash button**/
+
+button {
+  background-color:#e9c351; /**yellow matches bright color in photo**/
+  color: #351f39;  /**dark purple**/
+  font-weight: bolder;
+  border-radius:5px;
+  height: auto;
+  width:auto;
+  padding: .5rem 7rem;
+  margin-top: 2.5rem;
+}
+
+button:hover {
+   transition: color 400ms linear 0;
+   background-color:orange;
+}
+
+button:active {
+  transition: color 400ms linear 0;
+  background-color:#6999e4 ;
+}
+
+button:visited {
+  transition: color 400ms ease 500ms;
+  background-color: red;
+}
+
+
+/**Interest Portrait Tablet Rules**/
+
+@media only screen and (max-width: 1000px) and (min-width:500px) {
+  .interest {
+    flex-flow: column;
+  }
+
+  .extralargeimagecontainer {
+    width:100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+  }
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+
+}
+  .interesttext {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left:1rem;
+    height: auto;
+    text-align: left;
+  }
+
+}
+
+/**Interest Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .interest {
+    flex-flow: column;
+  }
+
+  .extralargeimagecontainer {
+    width:100%;
+    height:auto;
+    margin: 0;
+    padding: 0;
+  }
+
+.extralargeimage img {
+  width:100%;
+  height: auto;
+}
+
+  .interesttext {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left:1rem;
+    height: auto;
+    text-align: left;
+  }
+}
+
+
+/**second section with large photo and more specific information links**/
+
+.generalinformation {
+display: flex;
+flex-flow: row nowrap;
+background-color: #726a95; /**purple**/
+width:100%;
+height: auto;
+}
+
+.largeimagecontainer {
+  width:60%;
+  display: block;
+  height:auto;
+  padding:2rem 1.5rem 2rem 1.5rem;
+  float: left;
+  border-right: 1px solid #351f39;  /**dark purple**/
+}
+
+.largeimage img {
+  width:95%;
+  height: auto;
+}
+
+/**inspirational quote from employment expert**/
+
+.quote {
+  display:block;
+  align-items: center;
+  text-align: left;
+  padding: 2rem 0.5rem 1.5rem 1.5rem;
+}
+
+.quote h2 p h4 {
+  margin: 1.5rem 0.5rem 1.5rem 1.5rem;
+}
+
+.quote p {
+  margin-top:1.5rem;
+  font-family: 'Arima Madurai', cursive;
+}
+
+.quote h4 {
+  margin-top: 4rem;
+}
+
+/**styles small stacked images in whole document**/
+.columncontainer {
+  display:flex;
+  flex-flow: column nowrap;
+  width:40%;
+}
+
+/**styles small stacked images in whole document**/
+.smallimagecontainer {
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+  width:100%;
+  height: auto;
+  border-bottom: 1px solid #351f39;  /**dark purple**/
+}
+
+.generalinformation .smallimagecontainer:last-child {
+  background-color: #709fb0; /**blue**/
+}
+
+/**styles small stacked images in whole document**/
+ .smallimage {
+   width: 35%;
+   height:auto;
+   float:left;
+   padding:2rem 1rem 1rem 1rem;
+ }
+
+/**styles small stacked images in whole document**/
+ .smallimage img {
+   height:auto;
+   width:100%;
+ }
+
+ .textbit {
+   width: 65%;
+   text-align: left;
+   float:right;
+ }
+
+ .textbit h4 {
+   margin-top:1.5rem;
+   margin-bottom: 1.5rem;
+ }
+
+ .textbit a{
+   color:#351f39;  /**dark purple**/
+   text-decoration: none;
+ }
+
+ .textbit a:hover {
+   transition: color 200ms linear 0;
+   background-color: #e9c351;
+ }
+
+.textbit a:visited {
+  transition:color 100ms linear 0;
+  background-color: #ffc980; /**periwinkle**/
+}
+
+  .mobileimage img{
+    display:none;
+}
+
+/**General Information Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .largeimagecontainer {
+    display:none;
+  }
+
+  .smallimage {
+  display:none;
+}
+
+  .mobileimage  img{
+    display: block;
+    width:100%;
+  }
+
+  .columncontainer {
+    width:100%;
+  }
+
+  .smallimagecontainer {
+    flex-flow:column;
+    border: none;
+  }
+
+  .textbit {
+    padding:1rem;
+    padding-right: 2rem;
+  }
+}
+
+
+/**Course Offerings**/
+
+.grid {
+  display:flex;
+  flex-flow:row wrap;
+  padding-bottom:2rem;
+  width:100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  background-color: #351f39; /**dark purple**/
+}
+
+.grid h2 {
+  display:block;
+  width:100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mediumimagecontainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 28%;
+  height:auto;
+  text-align: left;
+  background-color: #f4e8c1; /**ivory**/
+  color:#351f39; /**dark purple**/
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 1rem;
+
+}
+
+.mediumimage img {
+  width: 100%;
+  height:auto;
+}
+
+.gridtext {
+  display:block;
+  margin: 1rem;
+  text-align:left;
+  line-height: 1.5;
+}
+
+.gridtext h4{
+  font-weight: 200;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+/**Course Offerings Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .mediumimage {
+    display:none;
+  }
+
+  .mediumimagecontainer {
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    height: auto;
+    width: 100%
+  }
+
+  .gridtext h4 {
+  display: none;
+  }
+
+  .gridtext p {
+    display:none;
+  }
+}
+
+
+/**Thesis section with video and student examples**/
+
+.thesis {
+  background-color: #709fb0; /**blue**/
+  display:flex;
+  flex-flow: row wrap;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  width:100%;
+  height:auto;
+}
+
+.thesis h2 {
+  display:block;
+  width:100%;
+  margin: 1rem auto;
+}
+
+.videoblock {
+  width:60%;
+  display: block;
+  height:auto;
+  float: left;
+}
+
+.video {
+  float:left;
+  width:100%;
+  height:auto;
+}
+
+.textblock {
+  width:100%;
+  display:block;
+  align-items: center;
+  text-align: left;
+  padding: 2rem 0.5rem 2rem 1.5rem;
+}
+
+.thesis p {
+  font-family: 'Arima Madurai', cursive;
+}
+
+.thesis .columncontainer {
+  margin-top: 2rem;
+}
+
+.thesis .smallimagecontainer {
+  border: none;
+}
+
+.thesis .smallimagecontainer:last-child {
+  background-color: #726a95; /**purple**/
+}
+
+
+/**Thesis Portrait Tablet Rules**/
+
+@media only screen and (max-width: 1100px) and (min-width:500px) {
+  .thesis {
+    flex-flow: column wrap;
+    overflow:auto;
+  }
+
+.videoblock {
+  width: 100%;
+  height: auto;
+}
+
+.textblock {
+  width:90%;
+  height: auto;
+}
+
+.thesis .columncontainer {
+  width: 100%;
+  height: auto;
+  align-content: center;
+  }
+
+}
+
+/**Thesis Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  .videoblock {
+    width:100%;
+    height: auto;
+  }
+
+  .video{
+    width:100%;
+    height: auto;
+  }
+
+  .textblock {
+    display:none;
+    }
+
+   .thesis.columncontainer {
+    display: none;
+  }
+
+  .thesis .smallimagecontainer {
+    display: none;
+  }
+
+}
+
+/**footer with web page use policy links**/
+
+footer {
+  background-color: #A0c1b8; /**green**/
+  padding-left: 1.5rem;
+  padding-top:1.5rem;
+  padding-bottom: 5rem;
+  border-top: 1px solid #351f39; /**dark purple**/
+}
+
+footer p {
+  float: left;
+  font-size: 1rem;
+}
+
+footer a {
+  display:inline;
+  float: right;
+  padding-right: 1.5rem;
+  text-decoration: none;
+  color:inherit;
+}
+
+footer a: hover {
+  transition: color 400ms linear 200ms;
+  color: #ffc980;  /**periwinkle**/
+}
+
+footer a: visited {
+  transition: color 400ms linear 0;
+  color: #351f39;  /**dark purple**/
+}
+
+/**Footer Mobile Rules**/
+
+@media only screen and (max-width: 500px) {
+  footer a {
+    display: none;
+  }
+
+  footer p {
+    padding-bottom: 1rem;
+  }
+}
