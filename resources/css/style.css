@@ -64,7 +64,7 @@ header p {
   font-weight: bolder;
   font-family: 'Josefin Sans', sans-serif;
   margin-left: 0.5rem;
-  padding:bottom: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 header span {
@@ -96,7 +96,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  transition: color 200ms linear 0;
+  transition: color 200ms linear 50ms;
   color:#256ebf;
 }
 
@@ -173,12 +173,12 @@ button {
 }
 
 button:hover {
-   transition: color 400ms linear 0;
+   transition: color 400ms linear 50ms;
    background-color:orange;
 }
 
 button:active {
-  transition: color 400ms linear 0;
+  transition: color 400ms linear 50ms;
   background-color:#6999e4 ;
 }
 
@@ -344,12 +344,12 @@ height: auto;
  }
 
  .textbit a:hover {
-   transition: color 200ms linear 0;
+   transition: color 200ms linear 50ms;
    background-color: #e9c351;
  }
 
 .textbit a:visited {
-  transition:color 100ms linear 0;
+  transition:color 100ms linear 50ms;
   background-color: #ffc980; /**periwinkle**/
 }
 
@@ -602,13 +602,13 @@ footer a {
   color:inherit;
 }
 
-footer a: hover {
+footer a:hover {
   transition: color 400ms linear 200ms;
   color: #ffc980;  /**periwinkle**/
 }
 
-footer a: visited {
-  transition: color 400ms linear 0;
+footer a:visited {
+  transition: color 400ms linear 50ms;
   color: #351f39;  /**dark purple**/
 }
 
